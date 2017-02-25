@@ -1,0 +1,393 @@
+body {
+    padding-top: 70px;
+}
+a{
+    color:lightblue;
+}
+a:hover,
+a:active{
+    color:thistle;
+}
+
+#sidebar .list-group, #sidebar .list-group-item {
+    background-color: transparent;
+}
+
+/* for list-groups nested within a list-group-item, reset the bottom margin */
+.list-group-item > .list-group {
+    margin-bottom: 0px;
+}
+
+/* for list-group-items nested within a list-group-item, reset the bottom
+   padding of the last item, b/c the containing item has paddimg already
+ */
+.list-group-item .list-group-item:last-child {
+    padding-bottom: 0px;
+}
+
+.list-group-item {
+    border: none;
+}
+
+.tag-0 {
+    font-size: 16pt;
+}
+
+.tag-1 {
+    font-size: 13pt;
+}
+
+.tag-2 {
+    font-size: 10pt;
+}
+
+.tag-3 {
+    font-size: 8pt;
+}
+
+.tag-4 {
+    font-size: 6pt;
+}
+
+#aboutme {
+    padding-top: 0px;
+    padding-bottom: 5px;
+    -ms-word-break: normal;
+    word-break: normal;
+}
+
+#sidebar {
+    padding-top: 0px;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
+#sidebar a {
+    color:#add8e6;
+}
+
+.icon-label {
+    margin-left: 10px;
+}
+
+/* Example for how to control spacing between icon and label in specific
+   lists in the sidebar. To change, override in your CUSTOM_CSS           */
+#sidebar #social i {
+    margin-right: 3px;
+}
+#sidebar #social .twitter a i{
+    color:#4da7de;
+}
+#sidebar #social .linkedin a i{
+    color:#3371b7;
+}
+#sidebar #social .youtube a i{
+    color:#e02a20;
+}
+#sidebar #social .steam a i{
+    color:lightgrey;
+}
+#sidebar #social .github a i{
+    color:lightgrey;
+}
+
+.entry-content a {
+    text-decoration: none;
+    border-bottom: 1px dotted;
+    color:lightblue;
+}
+
+.entry-content a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid;
+    color:thistle;
+}
+
+.entry-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.entry-content figcaption, .caption {
+    font-size: small;
+    margin-bottom: 2px;
+}
+
+.summary img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.floatright, .align-right {
+    float: right;
+}
+
+.floatleft, .align-left {
+    float: left;
+}
+
+.floatcenter, .align-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure.floatright, .align-right {
+    margin-left: 4px;
+}
+
+figure.floatleft, .align-left {
+    margin-right: 4px;
+}
+
+figure.floatcenter, .align-center {
+    margin-bottom: 11px;
+}
+
+.highlighttable pre {
+    /* Removes bootstrap default margin-bottom */
+    margin-bottom: 0px;
+}
+
+.highlighttable {
+    /* Adds them margin-bottom to highlightable instead of <pre> */
+    margin-bottom: 11px;
+}
+
+.highlighttable {
+    width: 100%;
+}
+
+#categories ul, #tags ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 0;
+}
+
+.docutils.footnote td.label {
+    display: table-cell;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    color: inherit;
+    text-align: inherit;
+    white-space: inherit;
+    border-radius: inherit;
+}
+
+.categories-timestamp {
+    color: #AAAAAA;
+    font-size: 0.9em;
+    margin-right: 10px;
+}
+
+.tagcloud li {
+    padding: 0px;
+}
+
+#banner {
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: scroll;
+    background-size: cover;
+    background-color: #C4C4C4;
+    margin: 0 0 20px;
+    padding: 70px 0; /*controls padding around inner text*/
+    position: relative;
+}
+
+#banner .copy {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7);
+    display: inline;
+    float: left;
+    max-width: 600px;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+#banner h1 {
+    color: #fff;
+    font-family: "HelveticaNeue-CondensedBold","Helvetica Neue CE 600 Condensed","Helvetica Neue LT Condensed","Helvetica Neue 600 Condensed","HelveticaNeue-BoldCondensed","Helvetica Neue BoldCondensed","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 60px;
+    font-stretch: condensed;
+    font-weight: 700;
+    line-height: 0.9;
+    margin: 0;
+    text-transform: uppercase;
+}
+#banner .intro {
+    color: #fff;
+    font-size: 21px;
+    line-height: 1.33;
+    opacity: 0.75;
+}
+#banner .btn, #banner .intro {
+    margin-left: 4px;
+}
+
+/* Solutions for mobile and small screens  */
+@media (max-width: 650px) {
+    #banner h1{
+       font-size: 30px; /* !important;*/
+    }
+    #banner .intro{
+        font-size: 16px;
+    }
+}
+
+:target:before {
+  content:"";
+  display:block;
+  height:50px;
+  /* fixed header height*/
+
+  margin:-50px 0 0;
+  /* negative fixed header height */
+}
+
+.gap-right {
+    margin-right: 10px;
+}
+
+.gap-left {
+  margin-left: 10px;
+}
+
+
+/* TODO: Merge below overrides above */
+
+
+
+/* =Fonts
+----------------------------------------------- */
+@font-face {
+    font-family:Caviar;
+    src:url('/fonts/caviardreams.ttf');
+}
+ul{
+    list-style-type:square;
+}
+h4, .h4{
+    color:#AAAAAA;
+}
+.navbar-default{
+    background-color:#0a0a0a;
+}
+#sidebar a{
+    color:lightblue;
+}
+#sidebar a:hover,
+#sidebar a:focus,
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus{
+    /*color:#1982d1;*/
+    color:thistle;
+    text-decoration:none;
+}
+/*colors for icon mask*/
+.navbar-default .navbar-brand img{
+    background-color:#FFFFFF;
+}
+.navbar-default .navbar-brand:hover img,
+.navbar-default .navbar-brand:focus img{
+    background-color:thistle;
+}
+.navbar-brand{
+    font-family:'Knewave', sans;
+}
+body{
+    font-family:'Comfortaa', sans;
+}
+body > .container{
+    margin-top:10px;
+}
+#banner{
+    padding: 140px 0;
+}
+#banner .container .copy h1{
+    line-height:1em;
+    text-decoration:none;
+    color:#FFFFFF;
+    font-size:70px;
+    font-family: 'Knewave', sans;
+    text-transform:capitalize;
+    font-weight:normal;
+    color: #FB9C5A;
+    color: orangered;
+    color: #F4324A;
+    color: #FF516C;
+    color: #F71568;
+    color: hotpink;
+    color: seagreen;
+    color: #AD2BAD;
+    color: purple;
+    color: yellow;
+    color: #FCC755;
+    color: #add8e6;
+    text-shadow:#add8e6 4px 4px 1px;
+    text-shadow:hotpink 4px 4px 1px;
+}
+#banner .container p.intro{
+    color:#DDDDDD;
+    font-size:14px;
+    margin:20px 0 0 0;
+    text-transform:lowercase;
+    text-align:right;
+    font-family: 'Caviar';
+    line-height:1.4em;
+    letter-spacing:0.2em;
+    font-weight:normal;
+    color:yellow;
+    text-shadow: 1px 1px 1px #3d3d3d;
+}
+.page-header h1,
+article h2,
+.tipue_search_content_title{
+    font-family: 'Shrikhand', sans;
+    font-size:32px;
+    letter-spacing:1px;
+}
+.page-header h1 a:hover,
+article h2 a:hover,
+.tipue_search_content_title a:hover{
+    text-decoration:none;
+}
+article h3{
+    font-family: 'Baloo', sans;
+}
+.summary,
+.entry-content,
+.tipue_search_content_text{
+    font-family:'Cormorant Garamond', serif;
+    font-size:16px;
+    letter-spacing:1px;
+}
+.post-info{
+    font-family:'Comfortaa', sans;
+    font-size: 14px;
+}
+.summary li,
+.entry-content li,
+.tipue_search_content_text li{
+    margin:0.5em 0;
+}
+.thumbnail img{
+    border-radius:4px;
+}
+a.thumbnail{
+    border:1px solid #464545;
+}
+a.thumbnail:hover,
+a.thumbnail:focus,
+a.thumbnail.active{
+    border-color:#DDDDDD;
+}
