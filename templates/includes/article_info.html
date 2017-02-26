@@ -37,12 +37,6 @@
         <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
     {% endif %}
 
-    {% if PDF_PROCESSOR %}
-        <span class="label label-default">
-            <a href="{{ SITEURL }}/pdf/{{ article.slug }}.pdf">PDF</a>
-        </span>
-    {% endif %}
-
     {% if article.tags %}
         <span class="label label-default">Tags</span>
         {% for tag in article.tags %}
