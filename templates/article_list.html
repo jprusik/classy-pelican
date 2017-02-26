@@ -2,7 +2,10 @@
 {% block content %}
     {% if articles %}
         <h4>Recent Posts</h4>
-        {% for article in (articles_page.object_list if articles_page else articles) %}
+        {% if RECENT_POST_COUNT is not defined %}
+            {% set RECENT_POST_COUNT = 5 %}
+        {% endif %}
+        {% for article in (articles_page.object_list[:RECENT_POST_COUNT] if articles_page else articles[:RECENT_POST_COUNT]) %}
             <article>
                 <h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
                 {% if DISPLAY_ARTICLE_INFO_ON_INDEX %}
