@@ -85,6 +85,18 @@
                         {% include "includes/article_info.html" %}
                     </div>
                 </div>
+                {% if article.modifiedreason %}
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Update
+                                {% if article.modified %}
+                                    <time datetime="{{ article.modified.isoformat() }}"> ({{ article.locale_modified }})</time>
+                                {% endif %}
+                            </h3>
+                        </div>
+                        <div class="panel-body">{{ article.modifiedreason }}</div>
+                    </div>
+                {% endif %}
                 {{ article.content }}
             </div>
             <!-- /.entry-content -->
