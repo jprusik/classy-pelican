@@ -374,10 +374,10 @@ figure.floatcenter, .align-center{
 
 #banner{
     background-repeat:no-repeat;
-    background-position:top center;
+    background-position:center right;
     background-attachment:scroll;
     background-size:cover;
-    background-color:#C4C4C4;
+    background-color:#0a0a0a;
     margin:0 0 20px;
     padding:70px 0; /*controls padding around inner text*/
     position:relative;
