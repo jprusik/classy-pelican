@@ -535,6 +535,10 @@ article h3{
     font-family:'Comfortaa', sans;
     font-size: 14px;
 }
+.post-info a,
+.post-info a:hover{
+  border-bottom:none;
+}
 .summary li,
 .entry-content li,
 .tipue_search_content_text li{

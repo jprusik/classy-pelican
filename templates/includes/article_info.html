@@ -43,5 +43,10 @@
         </span>
     {% endif %}
 
-    {% include 'includes/taglist.html' %}
+    {% if article.tags %}
+        <span class="label label-default">Tags</span>
+        {% for tag in article.tags %}
+            <a href="{{ SITEURL }}/{{ tag.url }}">#{{ tag }}</a>
+        {% endfor %}
+    {% endif %}
 </footer><!-- /.post-info -->
