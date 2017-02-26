@@ -1,5 +1,15 @@
 {% extends "article_list.html" %}
 
+{% block meta %}
+    <meta name="author" content="{{ AUTHOR }}" />
+    {% if SITE_KEYWORDS %}
+        <meta name="keywords" content="{{ SITE_KEYWORDS }}" />
+    {% endif %}
+    {% if SITE_DESCRIPTION %}
+        <meta name="description" content="{{ SITE_DESCRIPTION }}" />
+    {% endif %}
+{% endblock %}
+
 {% block canonical_rel %}<link rel="canonical" href="{{ SITEURL }}">{% endblock %}
 
 {% block banner %}
