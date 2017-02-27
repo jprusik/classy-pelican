@@ -187,6 +187,7 @@ a{
     color:lightblue;
 }
 a:hover,
+a:focus,
 a:active{
     color:thistle;
 }
@@ -283,7 +284,8 @@ a:active{
     color:lightblue;
 }
 
-.entry-content a:hover{
+.entry-content a:hover,
+.entry-content a:focus{
     text-decoration:none;
     border-bottom:1px solid;
     color:thistle;
@@ -507,8 +509,11 @@ article h2,
     letter-spacing:1px;
 }
 .page-header h1 a:hover,
+.page-header h1 a:focus,
 article h2 a:hover,
-.tipue_search_content_title a:hover{
+article h2 a:focus,
+.tipue_search_content_title a:hover,
+.tipue_search_content_title a:focus{
     text-decoration:none;
 }
 article h3{
@@ -528,8 +533,10 @@ article h3{
 }
 .post-info a,
 .post-info a:hover,
+.post-info a:focus,
 .entry-content h3 a,
-.entry-content h3 a:hover{
+.entry-content h3 a:hover,
+.entry-content h3 a:focus{
   border-bottom:none;
 }
 .summary li,
