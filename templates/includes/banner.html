@@ -1,16 +1,23 @@
 <style>
-	#banner{
-	    background-image:url("{{ SITEURL}}/{{ BANNER }}");
-	}
+    #banner{
+        background-image:url("{{ SITEURL}}/{{ BANNER }}");
+    }
 </style>
 
 <div id="banner">
-	<div class="container{% if BOOTSTRAP_FLUID %}-fluid{% endif %}">
-		<div class="copy">
-			<h1>{{ SITENAME }}</h1>
-			{% if BANNER_SUBTITLE %}
-				<p class="intro">{{ BANNER_SUBTITLE }}</p>
-			{% endif %}
-		</div>
-	</div>
+    <div class="container{% if BOOTSTRAP_FLUID %}-fluid{% endif %}">
+        <div class="copy">
+            <h1>{{ SITENAME }}</h1>
+            {% if BANNER_SUBTITLE_DEFAULT %}
+                <p class="intro"><noscript>{{ BANNER_SUBTITLE_DEFAULT }}</noscript></p>
+            {% endif %}
+        </div>
+    </div>
 </div>
+<script>
+document.addEventListener('DOMContentLoaded', function(event){
+    var banner_subtitles = {{ BANNER_SUBTITLES }};
+    var subtitle_selection = banner_subtitles[Math.floor(Math.random() * banner_subtitles.length)];
+    document.getElementsByClassName('intro')[0].innerHTML = subtitle_selection;
+});
+</script>
