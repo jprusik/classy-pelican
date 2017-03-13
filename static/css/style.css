@@ -305,6 +305,9 @@ a:active{
     max-width:100%;
     height:auto;
 }
+.summary .btn{
+    font-family:'Baloo',sans-serif;
+}
 
 
 .floatright, .align-right{
