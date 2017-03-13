@@ -19,6 +19,7 @@
             </article>
             <hr/>
         {% endfor %}
+        <a class="btn btn-default btn-sm pull-right" href="{{ SITEURL }}/{{ ARCHIVES_URL | default('archives.html') }}">See a list of older posts <i class="fa fa-external-link-square" aria-hidden="true"></i></a>
     {% endif %}
 
     {% include 'includes/pagination.html' %}
