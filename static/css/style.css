@@ -36,15 +36,6 @@
        url('/fonts/comfortaa-v9-latin-ext_latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
        url('/fonts/comfortaa-v9-latin-ext_latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-/* knewave-regular - latin */
-@font-face{
-  font-family:'Knewave';
-  font-style:normal;
-  font-weight:400;
-  src:local('Knewave'), local('Knewave-Regular'),
-       url('/fonts/knewave-v5-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('/fonts/knewave-v5-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
 /* shrikhand-regular - latin-ext_latin */
 @font-face{
   font-family:'Shrikhand';
@@ -452,23 +443,17 @@ h4, .h4{
 }
 #sidebar a:hover,
 #sidebar a:focus,
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus,
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li>a:focus{
     color:thistle;
     text-decoration:none;
 }
-/*colors for icon mask*/
-.navbar-default .navbar-brand img{
-    background-color:#FFFFFF;
+
+.navbar-default .navbar-brand{
+    padding:7px 15px;
 }
-.navbar-default .navbar-brand:hover img,
-.navbar-default .navbar-brand:focus img{
-    background-color:thistle;
-}
-.navbar-brand{
-    font-family:'Knewave',sans-serif;
+.navbar-default .navbar-brand .img-responsive{
+    height:100%;
 }
 body{
     font-family:'Comfortaa',sans-serif;
@@ -478,13 +463,14 @@ body > .container{
 }
 #banner{
     padding:140px 0;
+    image-rendering:pixelated;
 }
 #banner .container .copy h1{
     line-height:1em;
     text-decoration:none;
     color:#FFFFFF;
     font-size:70px;
-    font-family:'Knewave',sans-serif;
+    font-family:sans-serif;
     margin:0;
     text-transform:capitalize;
     font-weight:normal;
@@ -492,9 +478,8 @@ body > .container{
     text-shadow:hotpink 4px 4px 1px;
 }
 #banner .container p.intro{
-    color:#DDDDDD;
     font-size:14px;
-    margin:20px 0 0 0;
+    margin:0;
     text-transform:lowercase;
     text-align:right;
     font-family:'Caviar Dreams','Comfortaa',sans-serif;
@@ -503,6 +488,8 @@ body > .container{
     font-weight:normal;
     color:yellow;
     text-shadow:1px 1px 1px #3d3d3d;
+    max-width:210px;
+    margin:-42px 0 20px 220px;
 }
 .page-header h1,
 article h2,
