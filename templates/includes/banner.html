@@ -1,7 +1,7 @@
 <div id="banner" class="hidden-xs">
     <div class="container{% if BOOTSTRAP_FLUID %}-fluid{% endif %}">
         <div class="copy">
-            <img src="{{ LARGE_SITELOGO }}" title="{{ SITENAME }}" alt="{{ SITENAME }}" />
+            <img src="{{ LARGE_SITELOGO }}" width="{{ LARGE_SITELOGO_SIZE.WIDTH }}" height="{{ LARGE_SITELOGO_SIZE.HEIGHT }}" title="{{ SITENAME }}" alt="{{ SITENAME }}" />
             {% if BANNER_SUBTITLE_DEFAULT %}
                 <p class="intro"><noscript>{{ BANNER_SUBTITLE_DEFAULT }}</noscript></p>
             {% endif %}
