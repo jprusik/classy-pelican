@@ -217,12 +217,6 @@ h4, .h4{
 .navbar-default .navbar-brand .img-responsive{
     height:100%;
 }
-#aboutme{
-    padding-top:0px;
-    padding-bottom:5px;
-    -ms-word-break:normal;
-    word-break:normal;
-}
 #sidebar{
     padding-top:0px;
     -ms-word-break:break-all;
@@ -279,86 +273,19 @@ h4, .h4{
     padding-bottom:0px;
 }
 
-.tag-0{
-    font-size:16pt;
-}
-.tag-1{
-    font-size:13pt;
-}
-.tag-2{
-    font-size:10pt;
-}
-.tag-3{
-    font-size:8pt;
-}
-.tag-4{
-    font-size:6pt;
-}
-
 .icon-label{
     margin-left:10px;
 }
 
-.summary img{
-    max-width:100%;
-    height:auto;
-}
+/* post summary "read more" button */
 .summary .btn{
     font-family:'Baloo',sans-serif;
-}
-
-.floatright,
-.align-right{
-    float:right;
-}
-.floatleft,
-.align-left{
-    float:left;
-}
-.floatcenter,
-.align-center{
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
-}
-figure.floatright,
-.align-right{
-    margin-left:4px;
-}
-figure.floatleft,
-.align-left{
-    margin-right:4px;
-}
-figure.floatcenter,
-.align-center{
-    margin-bottom:11px;
-}
-
-.highlighttable{
-    width:100%;
-    /* Adds them margin-bottom to highlightable instead of <pre> */
-    margin-bottom:11px;
-}
-.highlighttable pre{
-    /* Removes bootstrap default margin-bottom */
-    margin-bottom:0px;
 }
 
 #categories ul, #tags ul{
     list-style:none;
     padding:0;
     margin-left:0;
-}
-
-.docutils.footnote td.label{
-    display:table-cell;
-    font-size:inherit;
-    font-weight:inherit;
-    line-height:inherit;
-    color:inherit;
-    text-align:inherit;
-    white-space:inherit;
-    border-radius:inherit;
 }
 
 .categories-timestamp{
