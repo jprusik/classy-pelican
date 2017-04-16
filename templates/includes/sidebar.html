@@ -100,6 +100,14 @@
         {% endif %}
 
         {% include 'includes/github.html' %}
+
+        {% if PAYPAL_ME_LINK %}
+            <li class="list-group-item">
+                <h4><i class="fa fa-cogs fa-lg"></i><span class="icon-label">Like my work?</span></h4>
+                <p>I'm happy to accept <a href="{{ PAYPAL_ME_LINK }}" target="_blank">PayPal tips</a>, or even just a friendly <a href="mailto:{{ EMAIL_ADDRESS }}">email</a>.</p>
+            </li>
+        {% endif %}
+
         {% include 'includes/twitter_timeline.html' %}
         {% include 'includes/links.html' %}
         {% include 'includes/sidebar-images.html' %}
