@@ -355,7 +355,8 @@ h4, .h4{
     margin-left:10px;
 }
 
-a.thumbnail{
+a.thumbnail,
+.entry-content a.thumbnail{
     border:1px solid #464545;
 }
 a.thumbnail:hover,
@@ -399,6 +400,7 @@ article h3{
 }
 .post-info .tag{
     margin-right:0.5em;
+    border-bottom:none;
 }
 .post-info a,
 .post-info a:hover,
