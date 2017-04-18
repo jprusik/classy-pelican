@@ -401,6 +401,7 @@ article h3{
 .post-info .tag{
     margin-right:0.5em;
     border-bottom:none;
+    text-transform:lowercase;
 }
 .post-info a,
 .post-info a:hover,
