@@ -27,52 +27,19 @@
         <meta name="author" content="{{ AUTHOR }}" />
     {% endblock %}
 
-    {# Open Graph tags #}
     {% if USE_OPEN_GRAPH %}
-    {% block opengraph %}
-    <!-- Open Graph tags -->
-        {% if OPEN_GRAPH_FB_APP_ID %}
-            <meta property="fb:app_id" content="{{ OPEN_GRAPH_FB_APP_ID }}"/>
-        {% endif %}
-        <meta property="og:site_name" content="{{ SITENAME }}" />
-        <meta property="og:type" content="website"/>
-        <meta property="og:title" content="{{ SITENAME }}"/>
-        <meta property="og:url" content="{{ SITEURL }}"/>
-        <meta property="og:description" content="{{ SITENAME }}"/>
-        {% if OPEN_GRAPH_IMAGE %}
-            <meta property="og:image"
-                  content="{{ SITEURL }}/{{ OPEN_GRAPH_IMAGE }}"/>
-        {% endif %}
-    {% endblock %}
-    {% endif %}
-
-    {# Twitter Cards tags #}
-    {% if TWITTER_CARDS and USE_OPEN_GRAPH %}
-        {# Do not include duplicates tag with og ones. #}
-        {# Twitter is able to infer them from og. #}
-        <meta name="twitter:card" content="summary">
-        {% if TWITTER_USERNAME %}
-            <meta name="twitter:site" content="@{{ TWITTER_USERNAME }}">
-            <meta name="twitter:creator" content="@{{ TWITTER_USERNAME }}">
-        {% endif %}
-        <meta name="twitter:domain" content="{{ SITEURL }}">
-        {% if article %}
-            {% if article.og_image %}
-                <meta property="twitter:image"
-                      content="{{ SITEURL }}/{{ article.og_image }}"/>
-            {% elif OPEN_GRAPH_IMAGE %}
-                <meta property="twitter:image"
-                      content="{{ SITEURL }}/{{ OPEN_GRAPH_IMAGE }}"/>
+        {% block opengraph %}
+        <!-- Open Graph tags -->
+            {% if OPEN_GRAPH_FB_APP_ID %}
+                <meta property="fb:app_id" content="{{ OPEN_GRAPH_FB_APP_ID }}"/>
             {% endif %}
-        {% elif page %}
-            {% if page.og_image %}
-                <meta property="twitter:image"
-                      content="{{ SITEURL }}/{{ page.og_image }}"/>
-            {% elif OPEN_GRAPH_IMAGE %}
-                <meta property="twitter:image"
-                      content="{{ SITEURL }}/{{ OPEN_GRAPH_IMAGE }}"/>
-            {% endif %}
-        {% endif %}
+            <meta property="og:site_name" content="{{ SITENAME }}" />
+            <meta property="og:type" content="website"/>
+            <meta property="og:title" content="{{ SITENAME }}"/>
+            <meta property="og:url" content="{{ SITEURL }}/"/>
+            <meta property="og:image" content="{{ SITEURL }}/{{ OPEN_GRAPH_IMAGE }}"/>
+            <meta property="og:description" content="{{ SITE_DESCRIPTION }}"/>
+        {% endblock %}
     {% endif %}
 
     <!-- Bootstrap -->

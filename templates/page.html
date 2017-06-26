@@ -11,26 +11,28 @@
         <meta name="description" content="{{ page.summary|striptags|escape }}" />
     {% endif %}
 {% endblock %}
-{% block opengraph %}
-    {% if OPEN_GRAPH_FB_APP_ID %}
-        <meta property="fb:app_id" content="{{ OPEN_GRAPH_FB_APP_ID }}"/>
-    {% endif %}
-    <meta property="og:site_name" content="{{ SITENAME }}" />
-    <meta property="og:type" content="article"/>
-    <meta property="og:title" content="{{ page.title|striptags|escape }}"/>
-    <meta property="og:url" content="{{ SITEURL }}/{{ page.url }}"/>
-    <meta property="og:description" content="{{ page.summary|striptags|escape }}" />
-    {% if page.og_image %}
-        <meta property="og:image"
-              content="{{ SITEURL }}/{{ page.og_image }}"/>
-    {% elif OPEN_GRAPH_IMAGE %}
-        <meta property="og:image"
-              content="{{ SITEURL }}/{{ OPEN_GRAPH_IMAGE }}"/>
-    {% endif %}
-{% endblock %}
+
+{% if USE_OPEN_GRAPH %}
+    {% block opengraph %}
+        <meta property="og:title" content="{{ page.title|striptags|escape }} | {{ SITENAME }}"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="{{ SITEURL }}/{{ page.url }}/"/>
+        <meta property="og:description" content="{{ page.summary|striptags|escape }}" />
+        {% if page.image %}
+            <meta property="og:image"
+                  content="{{ SITEURL }}/{{ page.image }}"/>
+        {% elif OPEN_GRAPH_IMAGE %}
+            <meta property="og:image"
+                  content="{{ SITEURL }}/{{ OPEN_GRAPH_IMAGE }}"/>
+        {% endif %}
+        {% if page.summary %}
+            <meta property="og:description" content="{{ page.summary|striptags|escape }}"/>
+        {% endif %}
+    {% endblock %}
+{% endif %}
 
 {% block canonical_rel %}
-<link rel="canonical" href="{{ SITEURL }}/{{ page.url }}">
+    <link rel="canonical" href="{{ SITEURL }}/{{ page.url }}/">
 {% endblock %}
 
 {% block breadcrumbs %}
