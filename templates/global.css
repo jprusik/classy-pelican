@@ -245,6 +245,9 @@ h4, .h4{
 #sidebar #social .steam a i{
     color:lightgrey;
 }
+#sidebar #social .stack-overflow a i{
+    color:#f69c55;
+}
 #sidebar #social .github a i{
     color:lightgrey;
 }
