@@ -73,7 +73,7 @@
                 </button>
                 {% endif %}
                 <a href="{{ SITEURL }}/" class="navbar-brand">
-                    {% if SITELOGO %}<img class="img-responsive" src="{{ SITEURL }}/{{ SITELOGO }}" width="{{ SITELOGO_SIZE.WIDTH }}" height="{{ SITELOGO_SIZE.HEIGHT }}" /> {% endif %}
+                    {% if SITELOGO %}<img class="img-responsive" src="{{ SITEURL }}/{{ SITELOGO }}" width="{{ SITELOGO_SIZE.WIDTH }}" height="{{ SITELOGO_SIZE.HEIGHT }}" title="{{ SITENAME }}" alt="{{ SITENAME }}" /> {% endif %}
                     {% if not HIDE_SITENAME %}{{ SITENAME }}{% endif %}
                 </a>
             </div>
