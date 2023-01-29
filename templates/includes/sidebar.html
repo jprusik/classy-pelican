@@ -106,6 +106,11 @@
                 <h4><i class="fa fa-cogs fa-lg"></i><span class="icon-label">Like my work?</span></h4>
                 <p>I'm happy to accept <a href="{{ PAYPAL_ME_LINK }}" target="_blank">PayPal</a> and <a href="bitcoin:{{ BITCOIN_ADDRESS }}" target="_blank">bitcoin</a> tips, or even just a friendly <a href="mailto:{{ EMAIL_ADDRESS }}">email</a>.</p>
             </li>
+        {% elif PAYPAL_ME_LINK and EMAIL_ADDRESS %}
+            <li class="list-group-item">
+                <h4><i class="fa fa-cogs fa-lg"></i><span class="icon-label">Like my work?</span></h4>
+                <p>I'm happy to accept <a href="{{ PAYPAL_ME_LINK }}" target="_blank">PayPal</a> tips, or even just a friendly <a href="mailto:{{ EMAIL_ADDRESS }}">email</a>.</p>
+            </li>
         {% endif %}
 
         {% include 'includes/twitter_timeline.html' %}
