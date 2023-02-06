@@ -1,0 +1,41 @@
+{% set supporterLinks, tipsLinks = [], [] %}
+
+{% if SUPPORT_LINK_PATREON %}
+  {{ supporterLinks.append('<a href="%s" target="_blank">Patreon</a>'|format(SUPPORT_LINK_PATREON)) or "" }}
+{% endif %}
+{% if SUPPORT_LINK_GITHUB %}
+  {{ supporterLinks.append('<a href="%s" target="_blank">GitHub Sponsors</a>'|format(SUPPORT_LINK_GITHUB)) or "" }}
+{% endif %}
+
+{% if TIPS_LINK_PAYPAL %}
+  {{ tipsLinks.append('<a href="%s" target="_blank">PayPal</a>'|format(TIPS_LINK_PAYPAL)) or "" }}
+{% endif %}
+{% if TIPS_LINK_BITCOIN %}
+  {{ tipsLinks.append('<a href="bitcoin:%s" target="_blank">Bitcoin</a>'|format(TIPS_LINK_BITCOIN)) or "" }}
+{% endif %}
+
+{% if ((
+      supporterLinks|length or
+      tipsLinks|length
+    ) and
+    EMAIL_ADDRESS
+  )
+%}
+  <li class="list-group-item">
+    <h4><i class="fa fa-cogs fa-lg"></i><span class="icon-label">Like my work?</span></h4>
+
+    {% if supporterLinks|length or tipsLinks|length %}
+      {% if supporterLinks|length %}
+        <p>You can become a supporter via {{ supporterLinks|join(' or ')}}.</p>
+      {% endif %}
+
+      {% if tipsLinks|length %}
+        <p>I'm {% if supporterLinks|length %}also {% endif %}happy to accept {{ tipsLinks|join(' or ')}} tips, or even just a friendly <a href="mailto:{{ EMAIL_ADDRESS }}">email</a>.
+      {% else %}
+        <p>I'm also happy just to <a href="mailto:{{ EMAIL_ADDRESS }}">hear from you</a>!
+      {% endif %}
+    {% elif EMAIL_ADDRESS %}
+      <p>I'd love to <a href="mailto:{{ EMAIL_ADDRESS }}">hear from you</a>!
+    {% endif %}
+  </li>
+{% endif %}
