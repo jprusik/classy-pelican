@@ -8,14 +8,25 @@
         {% for article in (articles_page.object_list[:RECENT_POST_COUNT] if articles_page else articles[:RECENT_POST_COUNT]) %}
             <article>
                 <h2><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h2>
-                {% if DISPLAY_ARTICLE_INFO_ON_INDEX %}
-                    <div class="well well-sm">
-                        {% include "includes/article_info.html" %}
-                    </div>
-                {% endif %}
                 <div class="summary">{{ article.summary }}
                     <a class="btn btn-default btn-xs" href="{{ SITEURL }}/{{ article.url }}">read post <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
                 </div>
+                {% if DISPLAY_ARTICLE_INFO_ON_INDEX %}
+                    <br />
+                    <div class="well well-sm">
+                        {% include "includes/article_info.html" %}
+                    </div>
+                {% elif article.tags and DISPLAY_ARTICLE_TAGS_ON_INDEX %}
+                    <br />
+                    <div class="post-info">
+                        {% if article.tags %}
+                            <span class="label label-default">Tags</span>
+                            {%- for tag in article.tags|sort %}
+                                <a class="tag" href="{{ SITEURL }}/tag/{{tag.slug}}">{{ tag }}</a>
+                            {% endfor %}
+                        {% endif %}
+                    </div>
+                {% endif %}
             </article>
             <hr/>
         {% endfor %}
