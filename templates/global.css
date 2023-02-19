@@ -360,6 +360,37 @@ a.thumbnail:focus,
 a.thumbnail.active{
     border-color:#DDDDDD;
 }
+
+.pagination>.active>a,
+.pagination>.active>span,
+.pagination>.active>a:hover,
+.pagination>.active>span:hover,
+.pagination>.active>a:focus,
+.pagination>.active>span:focus {
+    background-color: #464545;
+}
+
+.pagination>li>a:hover,
+.pagination>li>span:hover,
+.pagination>li>a:focus,
+.pagination>li>span:focus {
+    background-color: thistle;
+}
+
+.pagination>.disabled>span,
+.pagination>.disabled>span:hover,
+.pagination>.disabled>span:focus,
+.pagination>.disabled>a,
+.pagination>.disabled>a:hover,
+.pagination>.disabled>a:focus {
+    background-color: #2c2c2c;
+}
+
+.pagination>li>a,
+.pagination>li>span {
+    background-color: slategrey;
+}
+
 .thumbnail img{
     border-radius:4px;
 }
