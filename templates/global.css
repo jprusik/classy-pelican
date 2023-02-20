@@ -5,144 +5,63 @@
     font-family:'Baloo';
     font-style:normal;
     font-weight:400;
-    src:local('Baloo'), local('Baloo-Regular'),
-        url('/fonts/baloo-v1-latin-ext_latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('/fonts/baloo-v1-latin-ext_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    src:local('Baloo'),
+        url('/fonts/baloo-v1-latin-ext_latin-regular.woff2') format('woff2');
 }
 /* comfortaa-300 - latin-ext_latin */
 @font-face{
     font-family:'Comfortaa';
     font-style:normal;
     font-weight:300;
-    src:local('Comfortaa Light'), local('Comfortaa-Light'),
-        url('/fonts/comfortaa-v9-latin-ext_latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('/fonts/comfortaa-v9-latin-ext_latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    src:local('Comfortaa Light'),
+        url('/fonts/comfortaa-v9-latin-ext_latin-300.woff2') format('woff2');
 }
 /* comfortaa-regular - latin-ext_latin */
 @font-face{
     font-family:'Comfortaa';
     font-style:normal;
     font-weight:400;
-    src:local('Comfortaa Regular'), local('Comfortaa-Regular'),
-        url('/fonts/comfortaa-v9-latin-ext_latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('/fonts/comfortaa-v9-latin-ext_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    src:local('Comfortaa Regular'),
+        url('/fonts/comfortaa-v9-latin-ext_latin-regular.woff2') format('woff2');
 }
 /* comfortaa-700 - latin-ext_latin */
 @font-face{
     font-family:'Comfortaa';
     font-style:normal;
     font-weight:700;
-    src:local('Comfortaa Bold'), local('Comfortaa-Bold'),
-        url('/fonts/comfortaa-v9-latin-ext_latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('/fonts/comfortaa-v9-latin-ext_latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    src:local('Comfortaa Bold'),
+        url('/fonts/comfortaa-v9-latin-ext_latin-700.woff2') format('woff2');
 }
 /* shrikhand-regular - latin-ext_latin */
 @font-face{
     font-family:'Shrikhand';
     font-style:normal;
     font-weight:400;
-    src:local('Shrikhand'), local('Shrikhand-Regular'),
-        url('/fonts/shrikhand-v1-latin-ext_latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('/fonts/shrikhand-v1-latin-ext_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    src:local('Shrikhand'),
+        url('/fonts/shrikhand-v1-latin-ext_latin-regular.woff2') format('woff2');
 }
-/* cormorant-garamond-300 - latin-ext_latin */
-@font-face{
-    font-family:'Cormorant Garamond';
-    font-style:normal;
-    font-weight:300;
-    src:local('Cormorant Garamond Light'), local('CormorantGaramond-Light'),
-        url('/fonts/cormorant-garamond-v3-latin-ext_latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('/fonts/cormorant-garamond-v3-latin-ext_latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+/* https://github.com/canonical/UbuntuMono-fonts */
+@font-face {
+    font-family:'Ubuntu variable';
+    font-stretch: 100%;
+    font-style: normal;
+    font-weight: 100 800;
+    src: url('/fonts/Ubuntu[wdth,wght].woff2') format('woff2-variations')
 }
-/* cormorant-garamond-300italic - latin-ext_latin */
-@font-face{
-    font-family:'Cormorant Garamond';
-    font-style:italic;
-    font-weight:300;
-    src:local('Cormorant Garamond Light Italic'), local('CormorantGaramond-LightItalic'),
-        url('/fonts/cormorant-garamond-v3-latin-ext_latin-300italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('/fonts/cormorant-garamond-v3-latin-ext_latin-300italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+@font-face {
+    font-family:'Ubuntu variable';
+    font-stretch: 100%;
+    font-style: italic;
+    font-weight: 100 800;
+    src: url('/fonts/Ubuntu-Italic[wdth,wght].woff2') format('woff2-variations')
 }
-/* cormorant-garamond-regular - latin-ext_latin */
-@font-face{
-    font-family:'Cormorant Garamond';
-    font-style:normal;
-    font-weight:400;
-    src:local('Cormorant Garamond Regular'), local('CormorantGaramond-Regular'),
-        url('/fonts/cormorant-garamond-v3-latin-ext_latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('/fonts/cormorant-garamond-v3-latin-ext_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+@font-face {
+    font-family: 'Ubuntu Mono variable';
+    font-style: normal;
+    font-weight: 100 800;
+    src: url('/fonts/UbuntuMono[wght]-latin-extended.woff2') format('woff2-variations')
 }
-/* cormorant-garamond-italic - latin-ext_latin */
-@font-face{
-    font-family:'Cormorant Garamond';
-    font-style:italic;
-    font-weight:400;
-    src:local('Cormorant Garamond Italic'), local('CormorantGaramond-Italic'),
-        url('/fonts/cormorant-garamond-v3-latin-ext_latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('/fonts/cormorant-garamond-v3-latin-ext_latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* cormorant-garamond-500 - latin-ext_latin */
-@font-face{
-    font-family:'Cormorant Garamond';
-    font-style:normal;
-    font-weight:500;
-    src:local('Cormorant Garamond Medium'), local('CormorantGaramond-Medium'),
-        url('/fonts/cormorant-garamond-v3-latin-ext_latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('/fonts/cormorant-garamond-v3-latin-ext_latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* cormorant-garamond-500italic - latin-ext_latin */
-@font-face{
-    font-family:'Cormorant Garamond';
-    font-style:italic;
-    font-weight:500;
-    src:local('Cormorant Garamond Medium Italic'), local('CormorantGaramond-MediumItalic'),
-        url('/fonts/cormorant-garamond-v3-latin-ext_latin-500italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('/fonts/cormorant-garamond-v3-latin-ext_latin-500italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* cormorant-garamond-600 - latin-ext_latin */
-@font-face{
-    font-family:'Cormorant Garamond';
-    font-style:normal;
-    font-weight:600;
-    src:local('Cormorant Garamond SemiBold'), local('CormorantGaramond-SemiBold'),
-        url('/fonts/cormorant-garamond-v3-latin-ext_latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('/fonts/cormorant-garamond-v3-latin-ext_latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* cormorant-garamond-600italic - latin-ext_latin */
-@font-face{
-    font-family:'Cormorant Garamond';
-    font-style:italic;
-    font-weight:600;
-    src:local('Cormorant Garamond SemiBold Italic'), local('CormorantGaramond-SemiBoldItalic'),
-        url('/fonts/cormorant-garamond-v3-latin-ext_latin-600italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('/fonts/cormorant-garamond-v3-latin-ext_latin-600italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* cormorant-garamond-700 - latin-ext_latin */
-@font-face{
-    font-family:'Cormorant Garamond';
-    font-style:normal;
-    font-weight:700;
-    src:local('Cormorant Garamond Bold'), local('CormorantGaramond-Bold'),
-        url('/fonts/cormorant-garamond-v3-latin-ext_latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('/fonts/cormorant-garamond-v3-latin-ext_latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* cormorant-garamond-700italic - latin-ext_latin */
-@font-face{
-    font-family:'Cormorant Garamond';
-    font-style:italic;
-    font-weight:700;
-    src:local('Cormorant Garamond Bold Italic'), local('CormorantGaramond-BoldItalic'),
-        url('/fonts/cormorant-garamond-v3-latin-ext_latin-700italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('/fonts/cormorant-garamond-v3-latin-ext_latin-700italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-@font-face{
-    font-family:'Cormorant Garamond';
-    font-style:italic;
-    font-weight:700;
-    src:local('Cormorant Garamond Bold Italic'), local('CormorantGaramond-BoldItalic'),
-        url('/fonts/cormorant-garamond-v3-latin-ext_latin-700italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('/fonts/cormorant-garamond-v3-latin-ext_latin-700italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
+
 /* Caviar Dreams */
 @font-face{
     font-family:'Caviar Dreams';
@@ -168,16 +87,6 @@
     font-style:italic;
     font-weight:700;
 }
-/* ubuntu-mono-regular - latin-ext_latin */
-@font-face {
-    font-family:'Ubuntu Mono';
-    font-style:normal;
-    font-weight:400;
-    src:local('Ubuntu Mono'), local('UbuntuMono-Regular'),
-        url('/fonts/ubuntu-mono-v6-latin-ext_latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('/fonts/ubuntu-mono-v6-latin-ext_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
 
 /* Bootstrap Overrides */
 body{
@@ -199,7 +108,7 @@ code,
 kbd,
 pre,
 samp{
-    font-family:'Ubuntu Mono',Menlo,Monaco,Consolas,'Courier New',monospace;
+    font-family:'Ubuntu Mono variable',monospace;
 }
 ul{
     list-style-type:square;
@@ -416,7 +325,7 @@ article h3{
 .summary,
 .entry-content,
 .tipue_search_content_text{
-    font-family:'Cormorant Garamond',serif;
+    font-family:'Ubuntu variable',serif;
     font-size:16px;
     letter-spacing:1px;
     font-weight:lighter;
