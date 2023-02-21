@@ -46,9 +46,6 @@
     <link type="text/css" rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/bootstrap.classy.min.css" />
     <link type="text/css" rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/font-awesome.min.css" />
     <link type="text/css" rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/fonts.css" />
-    {% if USE_PYGMENTS %}
-        <link type="text/css" rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/pygments/{{ PYGMENTS_STYLE|default('native') }}.css" />
-    {% endif %}
     {% if 'tipue_search' in PLUGINS %}
     <link type="text/css" rel="stylesheet" href="{{ SITEURL}}/{{ THEME_STATIC_DIR }}/tipuesearch/tipuesearch.css" />
     {% endif %}
@@ -161,9 +158,23 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/bootstrap.min.js"></script>
 
-    {% if BANNER %}
-        <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/bodypadding.js"></script>
-    {% endif %}
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function(event) {
+            {% if GITHUB_USER %}
+            github.showRepos({
+                user: '{{ GITHUB_USER }}',
+                count: {{ GITHUB_REPO_COUNT or 5 }},
+                skip_forks: {{ GITHUB_SKIP_FORK or "false" }},
+                target: '#gh_repos'
+            });
+            {% endif %}
+            {% if BANNER %}
+            document.querySelector('body').style.paddingTop =
+                document.querySelector('.navbar').offsetHeight+'px';
+            {% endif %}
+        });
+    </script>
+
     {% include 'includes/github-js.html' %}
     {% include 'includes/ga.html' %}
     {% include 'includes/piwik.html' %}
