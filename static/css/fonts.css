@@ -1,0 +1,89 @@
+/* =Fonts
+----------------------------------------------- */
+/* baloo-regular - latin-ext_latin */
+@font-face{
+    font-family:'Baloo';
+    font-style:normal;
+    font-weight:400;
+    src:local('Baloo'),
+        url('../fonts/baloo-v1-latin-ext_latin-regular.woff2') format('woff2');
+}
+/* comfortaa-300 - latin-ext_latin */
+@font-face{
+    font-family:'Comfortaa';
+    font-style:normal;
+    font-weight:300;
+    src:local('Comfortaa Light'),
+        url('../fonts/comfortaa-v9-latin-ext_latin-300.woff2') format('woff2');
+}
+/* comfortaa-regular - latin-ext_latin */
+@font-face{
+    font-family:'Comfortaa';
+    font-style:normal;
+    font-weight:400;
+    src:local('Comfortaa Regular'),
+        url('../fonts/comfortaa-v9-latin-ext_latin-regular.woff2') format('woff2');
+}
+/* comfortaa-700 - latin-ext_latin */
+@font-face{
+    font-family:'Comfortaa';
+    font-style:normal;
+    font-weight:700;
+    src:local('Comfortaa Bold'),
+        url('../fonts/comfortaa-v9-latin-ext_latin-700.woff2') format('woff2');
+}
+/* shrikhand-regular - latin-ext_latin */
+@font-face{
+    font-family:'Shrikhand';
+    font-style:normal;
+    font-weight:400;
+    src:local('Shrikhand'),
+        url('../fonts/shrikhand-v1-latin-ext_latin-regular.woff2') format('woff2');
+}
+/* https://github.com/canonical/UbuntuMono-fonts */
+@font-face {
+    font-family:'Ubuntu variable';
+    font-stretch: 100%;
+    font-style: normal;
+    font-weight: 100 800;
+    src: url('../fonts/Ubuntu[wdth,wght].woff2') format('woff2-variations')
+}
+@font-face {
+    font-family:'Ubuntu variable';
+    font-stretch: 100%;
+    font-style: italic;
+    font-weight: 100 800;
+    src: url('../fonts/Ubuntu-Italic[wdth,wght].woff2') format('woff2-variations')
+}
+@font-face {
+    font-family: 'Ubuntu Mono variable';
+    font-style: normal;
+    font-weight: 100 800;
+    src: url('../fonts/UbuntuMono[wght]-latin-extended.woff2') format('woff2-variations')
+}
+
+/* Caviar Dreams */
+@font-face{
+    font-family:'Caviar Dreams';
+    src:url('../fonts/CaviarDreams-regular.woff') format('woff');
+    font-style:normal;
+    font-weight:normal;
+}
+@font-face{
+    font-family:'Caviar Dreams';
+    src:url('../fonts/CaviarDreams-italic.woff') format('woff');
+    font-style:italic;
+    font-weight:normal;
+}
+@font-face{
+    font-family:'Caviar Dreams';
+    src:url('../fonts/CaviarDreams-bold.woff') format('woff');
+    font-style:normal;
+    font-weight:700;
+}
+@font-face{
+    font-family:'Caviar Dreams';
+    src:url('../fonts/CaviarDreams-bolditalic.woff') format('woff');
+    font-style:italic;
+    font-weight:700;
+}
