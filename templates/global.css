@@ -235,13 +235,17 @@ article h3{
 .summary,
 .entry-content,
 .tipue_search_content_text{
+    text-rendering: optimizeLegibility;
     font-family:'Ubuntu variable',sans-serif;
     font-size:15px;
-    font-weight:100;
-    text-rendering: optimizeLegibility;
+}
+.summary,
+.tipue_search_content_text {
+    font-weight:250;
 }
 .entry-content{
     letter-spacing: 1px;
+    font-weight:100;
 }
 .post-info{
     font-family:'Comfortaa',sans-serif;
