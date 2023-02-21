@@ -118,6 +118,16 @@
             <!-- /.navbar-collapse -->
         </div>
     </div> <!-- /.navbar -->
+    <noscript>
+        <div class="container alert alert-info" role="alert">
+        You may experience degraded performance and/or missing content on this website with JavaScript disabled.
+        </div>
+    </noscript>
+    <!--[if IE]>
+    <div class="container alert alert-info" role="alert">
+    Your browser is out-of-date! You may experience degraded performance and/or missing content on this website. For a better experience, use a more modern browser such as <strong>Microsoft Edge</strong>, <strong>Google Chrome</strong>, <strong>Apple Safari</strong>, or <strong>Mozilla Firefox</strong>.
+    </div>
+    <![endif]-->
     <!-- Banner -->
     {% if BANNER and BANNER_ALL_PAGES %}
         {% include 'includes/banner.html' %}
