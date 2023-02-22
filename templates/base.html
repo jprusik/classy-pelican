@@ -167,12 +167,12 @@
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script type="text/javascript">
-        document.addEventListener("DOMContentLoaded", function(event) {
+        document.addEventListener('DOMContentLoaded', function(event) {
             {% if GITHUB_USER %}
             github.showRepos({
                 user: '{{ GITHUB_USER }}',
                 count: {{ GITHUB_REPO_COUNT or 5 }},
-                skip_forks: {{ GITHUB_SKIP_FORK or "false" }},
+                skip_forks: {{ GITHUB_SKIP_FORK or 'false' }},
                 target: '#gh_repos'
             });
             {% endif %}
@@ -180,6 +180,13 @@
             document.querySelector('body').style.paddingTop =
                 document.querySelector('.navbar').offsetHeight+'px';
             {% endif %}
+
+            /* Normally this would be handled by bootstrap.js, but since
+            this is all we'd use it for, let's just roll our own. */
+            const navButton = document.querySelector('.navbar-toggle');
+            navButton.onclick = function () {
+                document.querySelector('.navbar-collapse').classList.toggle('collapse');
+            };
         });
     </script>
 
