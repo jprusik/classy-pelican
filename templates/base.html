@@ -46,9 +46,6 @@
     <link type="text/css" rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/bootstrap.classy.min.css" />
     <link type="text/css" rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/font-awesome.min.css" />
     <link type="text/css" rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/fonts.css" />
-    {% if 'tipue_search' in PLUGINS %}
-    <link type="text/css" rel="stylesheet" href="{{ SITEURL}}/{{ THEME_STATIC_DIR }}/tipuesearch/tipuesearch.css" />
-    {% endif %}
 
     <style type="text/css">
         {% include 'global.css' %}
@@ -100,15 +97,6 @@
                         {% endfor %}
                     {% endif %}
                 </ul>
-                {% if 'tipue_search' in PLUGINS %}
-                <ul class="nav navbar-form navbar-right">
-                  <li><span>
-                    <form class="navbar-search" action="{{ SEARCH_URL | default('/search.html') }}">
-                      <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input" required>
-                    </form></span>
-                  </li>
-                </ul>
-                {% endif %}
                 <ul class="nav navbar-nav navbar-right">
                 {% if ARCHIVES_SAVE_AS %}
                   <li><a href="{{ SITEURL }}/{{ ARCHIVES_URL | default('archives.html') }}"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
@@ -162,8 +150,6 @@
         </div>
     </div>
     {% include 'includes/footer.html' %}
-
-    <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/jquery.min.js"></script>
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script type="text/javascript">

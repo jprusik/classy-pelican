@@ -223,8 +223,7 @@ a.thumbnail.active{
 }
 
 .page-header h1,
-article h2,
-.tipue_search_content_title{
+article h2{
     font-family:'Shrikhand',sans-serif;
     font-size:32px;
     letter-spacing:1px;
@@ -232,23 +231,19 @@ article h2,
 .page-header h1 a:hover,
 .page-header h1 a:focus,
 article h2 a:hover,
-article h2 a:focus,
-.tipue_search_content_title a:hover,
-.tipue_search_content_title a:focus{
+article h2 a:focus{
     text-decoration:none;
 }
 article h3{
     font-family:'Baloo',sans-serif;
 }
 .summary,
-.entry-content,
-.tipue_search_content_text{
+.entry-content{
     text-rendering: optimizeLegibility;
     font-family:'Ubuntu variable',sans-serif;
     font-size:15px;
 }
-.summary,
-.tipue_search_content_text {
+.summary{
     font-weight:250;
 }
 .entry-content{
@@ -273,8 +268,7 @@ article h3{
     border-bottom:none;
 }
 .summary li,
-.entry-content li,
-.tipue_search_content_text li{
+.entry-content li{
     margin:0.5em 0;
 }
 .entry-content a{
