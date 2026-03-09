@@ -18,9 +18,9 @@ var github = (function () {
         repos[i].html_url +
         '">' +
         repos[i].name +
-        '</a><p><small>' +
+        '</a><div><small>' +
         escapeHtml(repos[i].description || '') +
-        '</small></p></li>';
+        '</small></div></li>';
     }
     fragment += '</ul>';
     t.innerHTML = fragment;
@@ -41,7 +41,7 @@ var github = (function () {
     }
 
     for (var i = 0; i < data.length; i++) {
-      if (options.skip_forks && data.data[i].fork) {
+      if (options.skip_forks && data[i].fork) {
         continue;
       }
 

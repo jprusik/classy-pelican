@@ -172,7 +172,7 @@
             github.showRepos({
                 user: '{{ GITHUB_USER }}',
                 count: {{ GITHUB_REPO_COUNT or 5 }},
-                skip_forks: {{ GITHUB_SKIP_FORK or 'false' }},
+                skip_forks: {{ 'true' if GITHUB_SKIP_FORK else 'false' }},
                 target: '#gh_repos'
             });
             {% endif %}
