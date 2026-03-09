@@ -75,10 +75,10 @@ h4, .h4{
     background-color:transparent;
 }
 #sidebar ul#links li,
-#sidebar ul#recentposts li,
 #sidebar ul#social li{
     padding: 8px 0 8px 33px;
 }
+#sidebar ul#recentposts li,
 #sidebar ul#github li{
     padding: 8px 0;
 }
