@@ -74,6 +74,14 @@ h4, .h4{
 #sidebar .list-group-item{
     background-color:transparent;
 }
+#sidebar ul#links li,
+#sidebar ul#recentposts li,
+#sidebar ul#social li{
+    padding: 8px 0 8px 33px;
+}
+#sidebar ul#github li{
+    padding: 8px 0;
+}
 .list-group-item{
     border:none;
 }
