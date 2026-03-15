@@ -45,6 +45,14 @@ var github = (function () {
         continue;
       }
 
+      if (
+        options.skip_pages &&
+        data[i].name.endsWith('-pages') &&
+        data[i].default_branch === 'gh-pages'
+      ) {
+        continue;
+      }
+
       repos.push(data[i]);
     }
 

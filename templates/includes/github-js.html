@@ -5,6 +5,9 @@
     {% if GITHUB_SKIP_FORK is not defined %}
         {% set GITHUB_SKIP_FORK = False %}
     {% endif %}
+    {% if GITHUB_SKIP_PAGES is not defined %}
+        {% set GITHUB_SKIP_PAGES = False %}
+    {% endif %}
     <!-- GitHub JS -->
     <script src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/github.js" type="text/javascript"></script>
     <!-- End GitHub JS Code -->

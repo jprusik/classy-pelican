@@ -159,6 +159,7 @@
                 user: '{{ GITHUB_USER }}',
                 count: {{ GITHUB_REPO_COUNT or 5 }},
                 skip_forks: {{ 'true' if GITHUB_SKIP_FORK else 'false' }},
+                skip_pages: {{ 'true' if GITHUB_SKIP_PAGES else 'false' }},
                 target: '#gh_repos'
             });
             {% endif %}
